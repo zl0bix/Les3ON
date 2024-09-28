@@ -17,18 +17,18 @@ namespace Les3ON
         static void Main(string[] args)
         {
             if (Console.CapsLock == true)
-                Console.Write("Caps ON!");
+                Console.WriteLine("Caps ON!");
 
 
             if (Console.NumberLock == true)
                 Console.WriteLine("NUM LOCK ON!");
 
 
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(500);
             //Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkRed;
+            //Console.ForegroundColor = ConsoleColor.DarkRed;
 
-            string str = "\nEnter langth of array-> ";
+            string str = "Enter langth of array-> ";
             Console.Write(str.ToUpper());
             int numArr = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[numArr];
